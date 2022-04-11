@@ -1,9 +1,12 @@
 <template>
-  <v-card class="mx-auto mb-3" width="250">
+  <v-card class="char-card mx-auto mb-3" width="250">
     <v-hover v-slot="{hover}">
       <v-img :src="char.img" height="330">
         <v-expand-transition>
-          <v-container v-if="hover" class="d-flex align-center justify-center">
+          <v-container
+              v-if="hover"
+              class="transition-fast-in-fast-out d-flex align-center justify-center"
+              style="height: 100%; background-color: rgba(0, 128, 128, .5)">
             <v-btn>More</v-btn>
           </v-container>
         </v-expand-transition>

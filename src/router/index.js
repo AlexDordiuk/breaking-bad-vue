@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import CharactersView from '../views/CharactersView.vue'
-import EpisodesView from '../views/EpisodesView'
-import FavoritesCharactersView from "@/views/FavoritesCharactersView";
+import CharactersPage from '../pages/CharactersPage.vue'
+import EpisodesPage from '../pages/EpisodesPage'
+import FavoritesCharactersPage from "@/pages/FavoritesCharactersPage";
 
 Vue.use(VueRouter)
 
@@ -10,17 +10,17 @@ const routes = [
   {
     path: '/',
     name: 'characters',
-    component: CharactersView
+    component: CharactersPage
   },
   {
     path: '/episodes',
     name: 'episodes',
-    component: EpisodesView
+    component: EpisodesPage
   },
   {
     path: '/favorites',
     name: 'favorites',
-    component: FavoritesCharactersView
+    component: FavoritesCharactersPage
   }
 ]
 
