@@ -3,17 +3,17 @@
       app
       color="teal darken-1"
       dark
-      class="app-bar p-2"
+      class="app-bar p-2 pr-1"
   >
     <v-container>
       <v-img
           src="@/assets/bb_logo.png"
-          width="90"
+          width="80"
           height="50"
       ></v-img>
     </v-container>
 
-    <v-btn class="app-bar__btn mr-2 " outlined>
+    <v-btn class="app-bar__btn mr-1" outlined>
       <router-link to="/">Characters</router-link>
     </v-btn>
     <v-btn outlined>

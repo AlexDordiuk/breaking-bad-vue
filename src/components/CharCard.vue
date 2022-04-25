@@ -7,7 +7,7 @@
               v-if="hover"
               class="transition-fast-in-fast-out d-flex align-center justify-center"
               style="height: 100%; background-color: rgba(0, 128, 128, .5)">
-            <v-btn>More</v-btn>
+            <v-btn @click="$router.push({name: 'charPage', params: {charName: `${char.name}`, char: char}})">More</v-btn>
           </v-container>
         </v-expand-transition>
       </v-img>
